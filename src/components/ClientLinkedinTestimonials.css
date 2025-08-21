@@ -1,0 +1,132 @@
+.testimonial-section {
+  padding: 60px 15px;
+  background: #f3f9fc;
+  text-align: center;
+}
+
+.testimonial-title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #004c6d;
+}
+
+.testimonial-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.testimonial-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-card {
+  flex: 0 0 90%;
+  max-width: 420px;
+  scroll-snap-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin: auto;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.testimonial-avatar {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-name {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+}
+
+.star-rating {
+  font-size: 1.1rem;
+  color: #fbb034;
+  margin-top: 2px;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 10px 0 15px;
+}
+
+.linkedin-btn {
+  background-color: #0a66c2;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  transition: background 0.3s ease;
+}
+
+.linkedin-btn:hover {
+  background-color: #004182;
+}
+
+/* Dots for slider (optional if you want it) */
+.slider-dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.slider-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.slider-dot.active {
+  background: #004c6d;
+}
+
+/* Responsive Layout Adjustments */
+@media (min-width: 768px) {
+  .testimonial-slider {
+    justify-content: center;
+    overflow: visible;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .testimonial-card {
+    flex: 0 0 300px;
+  }
+}

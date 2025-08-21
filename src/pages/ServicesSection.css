@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* === Hero Section === */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  padding: 50px 5%;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  max-width: 50%;
+}
+
+.hero-left h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.hero-left p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.hero-right img {
+  width: 340px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* === Services Modern Section === */
+.services-modern-section {
+  padding: 60px 5%;
+  background-color: #f9f9f9;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #0072ff;
+}
+
+/* Grid layout */
+.services-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* Service Card Style */
+.service-card {
+  background: #fff;
+  padding: 30px 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.service-card .icon {
+  font-size: 2rem;
+  color: #0072ff;
+  margin-bottom: 16px;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  color: #0072ff;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* === CTA Section === */
+.cta-section {
+  background: #0072ff;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 50px 50px 0 0;
+  margin-top: 60px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.cta-button {
+  background: white;
+  color: #0072ff;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #f0f0f0;
+}
+/* Reusable button style */
+.btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1e3a8a;
+}

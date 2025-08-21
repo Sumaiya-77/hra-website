@@ -1,0 +1,155 @@
+/* ---------- Base Header ---------- */
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+  background: linear-gradient(to top,hsl(208, 94%, 59%),  #00c6ff);
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+
+/* ---------- Logo & Text ---------- */
+.logo-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-left: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.brand-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1b1b1b;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  color: #222;
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* ---------- Nav Links ---------- */
+.hero-nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+}
+
+.hero-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.hero-nav a:hover::after {
+  width: 100%;
+}
+
+/* ---------- Hamburger Toggle ---------- */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: black;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.close-btn {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+}
+
+/* ---------- Mobile Nav ---------- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .hero-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    width: 80%;
+    background: #00c7d1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .hero-nav.open {
+    display: flex;
+    animation: slideDown 0.3s ease-in-out;
+  }
+
+  .hero-nav a {
+    padding: 12px 0;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* ---------- Smooth Entrance ---------- */
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,75 @@
+/* src/components/WhyUsSection.css */
+.whyus-timeline-section {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #ffffff, #e0f7fa);
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #003d5b;
+    margin-bottom: 50px;
+  }
+  
+  .timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    padding-left: 40px;
+    border-left: 3px solid #00bcd4;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  .timeline-icon {
+    font-size: 2rem;
+    background: #00bcd4;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .timeline-content h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #004b6b;
+  }
+  
+  .timeline-content p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  @media (max-width: 768px) {
+    .timeline-container {
+      padding-left: 20px;
+      border-left: 2px solid #00bcd4;
+    }
+  
+    .timeline-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .timeline-icon {
+      margin-bottom: 10px;
+    }
+  }
+  

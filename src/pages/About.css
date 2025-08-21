@@ -1,0 +1,138 @@
+.about-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    animation: fadeInUp 0.7s ease;
+  }
+  
+  .about-container h1 {
+    font-size: 2.5rem;
+    color: #005f99;
+    margin-bottom: 10px;
+  }
+  
+  .about-container p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  .contact-info a {
+    color: #0077b5;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #0077b5;
+    outline: none;
+  }
+  
+  .contact-form button {
+    background-color: #0077b5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #005f99;
+  }
+  
+  .map-section {
+    margin-top: 50px;
+  }
+  
+  .map-section h2 {
+    font-size: 1.8rem;
+    color: #005f99;
+    margin-bottom: 10px;
+  }
+  
+  .map-section p {
+    margin-top: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .map-section a {
+    color: #0077b5;
+    text-decoration: none;
+  }
+  
+  .map-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeInUp 0.9s ease forwards;
+  }
+  
+  .fade-delay-1 {
+    animation-delay: 0.2s;
+  }
+  .fade-delay-2 {
+    animation-delay: 0.4s;
+  }
+  .fade-delay-3 {
+    animation-delay: 0.6s;
+  }
+  .fade-delay-4 {
+    animation-delay: 0.8s;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .about-container h1 {
+      font-size: 2rem;
+    }
+  
+    .map-section iframe {
+      height: 300px;
+    }
+  }
+  

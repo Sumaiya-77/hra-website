@@ -1,0 +1,213 @@
+.support-container {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.9s ease forwards;
+  opacity: 0;
+}
+
+.fade-delay-1 {
+  animation-delay: 0.3s;
+}
+.fade-delay-2 {
+  animation-delay: 0.6s;
+}
+.fade-delay-3 {
+  animation-delay: 0.9s;
+}
+
+/* ---------- Hero Section ---------- */
+.support-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #2196f3, #1e3a8a);
+  color: white;
+  padding: 60px 5%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.support-hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.support-hero h1 span {
+  color: #fff176;
+}
+
+.support-hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.hero-left {
+  flex: 1 1 400px;
+}
+
+.hero-right {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.hero-right img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.hero-right img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Section ---------- */
+.support-section {
+  padding: 60px 5%;
+  background: #f9f9f9;
+}
+
+.alt-bg {
+  background: #eef4ff;
+}
+
+/* ---------- Card Layout ---------- */
+.support-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.support-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.support-text {
+  flex: 1 1 400px;
+}
+
+.support-text h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.support-text ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+.support-text li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.support-text li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #2196f3;
+}
+
+/* ---------- Image Section ---------- */
+.support-img {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.support-img img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.support-img img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- CTA Section ---------- */
+.support-cta {
+  text-align: center;
+  background: linear-gradient(to right, #5789e6, #2aaee6);
+  color: white;
+  padding: 60px 20px;
+}
+
+.support-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.support-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.support-cta button {
+  background: #ffcd38;
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.support-cta button:hover {
+  background: #ffc107;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .support-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .support-card {
+    flex-direction: column;
+  }
+
+  .support-card.reverse {
+    flex-direction: column;
+  }
+
+  .support-cta h2 {
+    font-size: 1.6rem;
+  }
+}

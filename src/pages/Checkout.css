@@ -1,0 +1,117 @@
+.checkout-container {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .checkout-heading {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-steps {
+    background: #f9fbff;
+    border-left: 4px solid #00b2d6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .checkout-steps h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #003366;
+  }
+  
+  .checkout-steps ol {
+    padding-left: 20px;
+  }
+  
+  .checkout-steps li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .currency-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  
+  .currency-toggle button {
+    background-color: white;
+    border: 2px solid #00b2d6;
+    color: #00b2d6;
+    padding: 8px 20px;
+    margin: 0 5px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .currency-toggle .active {
+    background-color: #00b2d6;
+    color: white;
+  }
+  
+  .pricing-table {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .pricing-card {
+    background-color: #f4faff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 3px 10px rgba(0, 178, 214, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .pricing-card h3 {
+    margin: 0 0 10px;
+    color: #005c87;
+  }
+  
+  .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0084a6;
+  }
+  
+  .checkout-contact {
+    margin-top: 40px;
+    background-color: #f0f8fc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .checkout-contact a {
+    color: #005c87;
+    text-decoration: none;
+  }
+  
+  .checkout-contact a:hover {
+    text-decoration: underline;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

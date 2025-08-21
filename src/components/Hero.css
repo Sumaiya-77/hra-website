@@ -1,0 +1,142 @@
+.hero-wrapper {
+  width: 100%;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  padding: 100px 40px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn.primary {
+  background-color: #ffffff;
+  color: #0072ff;
+}
+
+.hero-btn.secondary {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.hero-image-wrapper {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.resume-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* === Animations === */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.fade-in-up.delay-1 {
+  animation-delay: 0.2s;
+}
+.fade-in-up.delay-2 {
+  animation-delay: 0.4s;
+}
+.fade-in-up.delay-3 {
+  animation-delay: 0.6s;
+}
+
+.fade-in-zoom {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: zoomIn 1.2s ease forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .resume-image {
+    max-width: 90%;
+  }
+}
