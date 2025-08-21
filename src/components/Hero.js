@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         <div className="hero-image-wrapper fade-in-zoom">
           <img
-            src="/Images/resume.png"
+            src="/Images/Resume.png"
             alt="Resume Illustration"
             className="resume-image"
           />
